@@ -1,0 +1,90 @@
+* {
+	text-align: center;
+	font-size: 20px;
+	font-family: monospace;
+	/*border: 1px solid black*/
+}
+
+#contenedor-marcador {
+	background: #CC7C14;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+#contenedor-cartas {
+	background: orange;
+	width: 90vw;
+	padding: 8px;
+	display: flex;
+	flex-flow: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.carta{
+	margin: 7px;
+	width: 17vw;
+	margin: 8px;
+	padding: 0;
+	border-radius: 20px;
+	border: 3px solid black;
+	transition: all 1s;
+}
+
+.carta-hover:hover{
+	transform: scale(1.2, 1.2);
+}
+
+.carta-animacion {
+	transform: rotateY(180deg); 
+	/*transform: translateY(200px);*/
+}
+
+.carta-blanca {
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.carta-chica {
+	height: 30px;
+}
+
+.carta-mediana {
+	height: 150px;
+}
+
+.carta-grande {
+height: 23vh;
+}
+
+.contenedor {
+	background: orange;
+	display: flex;
+	justify-content: center;
+}
+
+.carta-mostrada > h6 {
+	display: block;
+	z-index: 1;
+}
+
+.carta-nomostrada > h6 {
+	display: none;
+}
+.dialogo-oculto {
+	display: none;
+	background-color: orange;
+	width: 80vw;
+}
+.dialogo-oculto-2 {
+	display: none;
+	background-color: orange;
+	width: 80vw;
+}
+.img-dialogo-oculto{
+	width: 60vw;
+	height: 60vh;
+}
+
